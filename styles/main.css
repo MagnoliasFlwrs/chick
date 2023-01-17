@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --light-color: #F6F3E3;
+    --dark-color :#241D1C;
+    --beige-color:#BFBDB2;
+}
+.container {
+    max-width: calc(1216px + 16px*2);
+    padding: 0 16px;
+}
