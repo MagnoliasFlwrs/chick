@@ -1,14 +1,43 @@
+@import url(./header.css);
+@import url(./hero.css);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
 :root {
     --light-color: #F6F3E3;
     --dark-color :#241D1C;
     --beige-color:#BFBDB2;
 }
 .container {
-    max-width: calc(1216px + 16px*2);
-    padding: 0 16px;
+    max-width: calc(1216px + 48px*2);
+    padding: 0 48px;
+    margin: 0 auto;
+}
+body {
+    min-width: 320px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-family: 'Raleway' , sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.visuality-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+@media (max-width:560px ) {
+    .container {
+        padding: 0 24px;
+    }
 }
