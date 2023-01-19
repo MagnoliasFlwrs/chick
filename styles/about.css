@@ -1,0 +1,114 @@
+.about {
+    padding: 62px 0;
+}
+
+.about__tittle {
+    font-size: 40px;
+    line-height: 120%;
+    text-transform: uppercase;
+    max-width: 904px;
+    margin-bottom: 24px;
+}
+.about__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #BFBDB2;
+    margin-bottom: 72px;
+    max-width: 696px;
+}
+.about__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.about__item {
+    display: flex;
+    align-items: center;
+}
+.about__item-wrapper {
+    margin-left: 16px;
+}
+.about__item-title {
+    font-size: 22px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    /* white-space: nowrap; */
+}
+.about__item-description {
+    font-size: 16px;
+    line-height: 130%;
+    color: #BFBDB2;
+}
+@media (max-width:1024px) {
+    .about__description {
+        margin-bottom: 46px;
+    }
+    .about__item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .about__item-wrapper {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .about {
+        padding: 40px 0;
+    }
+    .about__tittle {
+        font-size: 32px;
+    }
+    .about__description {
+        margin-bottom: 38px;
+    }
+    .about__list {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .about__item:not(:last-child) {
+        margin-bottom: 51px;
+    }
+    .about__item-title {
+        font-size: 16px;
+    }
+    .about__item-description {
+        font-size: 16px;
+    }
+}
+@media (max-width:560px) {
+    .about {
+        padding: 32px 0;
+    }
+    .about__tittle {
+        font-size: 20px;
+        margin-bottom: 16px;
+        max-width: 100%;
+    }
+    .about__description {
+        font-size: 12px;
+        margin-bottom: 32px;
+        max-width: 100%;
+    }
+
+    .about__item-wrapper {
+        margin-left: 8px;
+    }
+    .about__item {
+        flex-direction: row;
+    }
+    .about__item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .about__item-description {
+        font-size: 12px;
+    }
+}
