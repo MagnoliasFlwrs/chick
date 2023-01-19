@@ -11,7 +11,8 @@
 
 .footer__info > p {
     font-size: 12px;
-    line-height: 100%;
+    line-height: 1;
+
 }
 .footer__copirate > p  {
     font-size: 12px;
