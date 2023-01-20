@@ -1,0 +1,22 @@
+.preload {
+    position: relative;
+    min-height: 100px;
+}
+.preload::after {
+    content: '';
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 13px double var(--light-color);
+    border-radius: 50%;
+    border-left-style: solid ;
+    animation: rotate 0.5s infinite linear;
+}
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
